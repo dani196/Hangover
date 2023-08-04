@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hangover Signup</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+ 
+  <div class="container">
+    <form action="register.php" method="POST">
+      <header>Signup Form</header>
+     
+        <div class="slide-page">
+          <div class="title">Basic Info:</div>
+          <div class="field">
+            <div class="label">First Name</div>
+            <input type="text" name="firstname">
+          </div>
+          <div class="field">
+            <div class="label">Last Name</div>
+            <input type="text" name="lastname">
+          </div>
+        </div>
+        <div class="slide-page">
+         <br><br> <div class="title">Contact Info:</div>
+          <div class="field">
+            <div class="label">Email Address</div>
+            <input type="text" name="Email">
+          </div>
+          <div class="field">
+            <div class="label">Phone Number</div>
+            <input type="number" name="phonenum">
+          </div>
+        </div>
+       
+        <div class="slide-page">
+          <div class="title">  </div>
+          <div class"label">Age  </div>
+            <input type="number" name="Age"
+        </div> 
+           
+         
+          
+            <div class="field">
+            <div class="label">Gender</div>
+            <select name="Gender">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+      <br> <br>  <div class="slide-page">
+          <div class="title">Login Details:</div>
+          <div class="field">
+            <div class="label">Username</div>
+            <input type="text" name="username">
+          </div>
+          <div class="field">
+            <div class="label">Password</div>
+            <input type="password" name="password">
+          </div>
+          <div class="field">
+            <button class="submit">Submit</button>
+          </div>
+        </div>
+        
+           
+    </form>
+  </div>
+  <script src="signup.js"></script>
+</body>
+
+</html>

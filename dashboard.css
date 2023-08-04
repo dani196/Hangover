@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  overflow-y: scroll; 
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  overflow-x: hidden; /* Hide horizontal scrollbar from container */
+  padding-right: 30px;
+  margin: 0 auto; /* Center the container horizontally */
+  height: calc(100vh - 20px);
+  overflow-y: scroll;
+
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px; /* Add some padding around the groups */
+  min-height: 100%;
+}
+
+
+
+
+.group {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.group-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.group-info h3 {
+  margin: 0;
+}
+
+.member-count {
+  font-size: 14px;
+}
+
+.join-btn {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.join-btn:hover {
+  background-color: #217dbb;
+}
+
+
+
+
+/* Add custom scrollbar styles */
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #59ff7d;
+  border-radius: 5px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background: #59ff59;
+}

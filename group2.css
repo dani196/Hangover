@@ -1,0 +1,18 @@
+/* Add your custom styles for Group 2 */
+body {
+    background-color: #f1f1f1;
+  }
+  
+  h1 {
+    color: #3e4c5e;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  p {
+    color: #777;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  

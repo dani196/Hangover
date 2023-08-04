@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Hangover login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="login.css"> 
+  
+</head>
+<body>
+  <div class="center">
+    <input type="checkbox" id="show">
+    <label for="show" class="show-btn">Login</label>
+    <div class="container">
+      <label for="show" class="close-btn fas fa-times" title="close"></label>
+      <div class="text">
+        Login Form
+      </div>
+      
+      <form action="login.php" method="POST">
+        <div class="data">
+          <label>Email </label>
+          <input type="text" name="Email" required>
+        </div>
+        <div class="data">
+          <label>Password</label>
+          <input type="password" name="password" required>
+        </div>
+        <div class="btn">
+          <div class="inner"></div>
+          <button type="submit">Login</button>
+        </div>
+        <div class="signup-link">
+          Not a member? <a href="#">Signup now</a>
+        </div>
+        <p id="error-message"></p> <!-- Add an element to display error messages -->
+      </form>
+    </div>
+  </div>
+  <script src="auth.js"></script>
+</body>
+</html>
